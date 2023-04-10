@@ -14,7 +14,7 @@ La página index.html tiene distintos bordes
 
 * Fuentes
 Sono, etc.
-<div style="color= #659AA6;">
+<div style="color: #659AA6;">
 hola
 </div>
 
