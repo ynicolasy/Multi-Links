@@ -74,6 +74,12 @@ nav {
   border: 2px solid yellow;
   padding-top: -2%;
 }
+
+.menu-space {
+  border: #fff;
+  background-color: #fff;
+}
+
 section {
   background: #659AA6;
   float: left;
