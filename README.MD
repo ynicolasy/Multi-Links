@@ -6,17 +6,14 @@ Descripción del proyecto:
 
 * También agrupa secciones de ejemplos (CSS y Bootstrap)
 
-La página index.html tiene distintos bordes 
+La página index.html tiene distintos colores en sus bordes 
 * Verde para el elemento < body >
 * Rojo para el borde del div container
 * #1f3143 para las secciones
 * #659AA6 para el menú
 
 * Fuentes
-Sono, etc.
-<div style="color: #659AA6;">
-hola
-</div>
+Sono(principal), Arial, Helvetica, sans-serif
 
 Paleta de Colores
 * 1 #013440
