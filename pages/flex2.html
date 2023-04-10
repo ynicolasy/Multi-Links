@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex cont.</title>
+    <link rel="stylesheet" href="./../css/flex2.css">
+
+    <script>
+      function changeToStart() {
+        document.getElementById("main").style["justify-content"] = 'flex-start';
+      }
+      function changeToEnd() {
+        document.getElementById("main").style["justify-content"] = 'flex-end';
+      }
+      function changeToSpaBet() {
+        document.getElementById("main").style["justify-content"] = 'space-between';
+      }
+      function changeToCenter() {
+        document.getElementById("main").style["justify-content"] = 'center';
+      }
+      function toDarkMode() {
+        document.getElementById("secciones").style["background-color"] = 'black';
+        document.getElementById("titulo").style["background-color"] = 'black';
+        document.getElementById("subtituloLargo").style["background-color"] = 'black';
+        document.getElementsByClassName("subtituloLargo").style["background-color"] = 'black';
+        document.body.style["background-color"] = '#19232e';
+      }
+      function toLightMode() {
+        document.getElementById("secciones").style["background-color"] = 'grey';
+        document.getElementById("titulo").style["background-color"] = 'grey';
+        document.getElementById("subtituloLargo").style["background-color"] = 'grey';
+        document.getElementsByClassName("subtituloLargo").style["background-color"] = 'grey';
+        document.body.style["background-color"] = 'grey';
+      }
+      function changeToAlStart() {
+        document.getElementById("main2").style["align-items"] = 'flex-start';
+      }
+      function changeToAlEnd() {
+        document.getElementById("main2").style["align-items"] = 'flex-end';
+      }
+      function changeToAlCenter() {
+        document.getElementById("main2").style["align-items"] = 'center';
+      }
+      function changeToAlConStart() {
+        document.getElementById("flex-alContent").style["align-content"] = 'flex-start';
+      }
+      function changeToAlConEnd() {
+        document.getElementById("flex-alContent").style["align-content"] = 'flex-end';
+      }
+      function changeToAlConCenter() {
+        document.getElementById("flex-alContent").style["align-content"] = 'center';
+      }
+      function changeToAlConSpAround() {
+        document.getElementById("flex-alContent").style["align-content"] = 'space-around';
+      }
+      function changeToAlConSpBetween() {
+        document.getElementById("flex-alContent").style["align-content"] = 'space-between';
+      }
+      function changeToAlSelfStart() {
+        document.getElementById("myBlueDiv").style["align-self"] = 'flex-start';
+      }
+      function changeToAlSelfEnd() {
+        document.getElementById("myBlueDiv").style["align-self"] = 'flex-end';
+      }
+      function changeToAlSelfCenter() {
+        document.getElementById("myBlueDiv").style["align-self"] = 'center';
+      }
+      function changeToAlSelfStretch() {
+        document.getElementById("myBlueDiv").style["align-self"] = 'stretch';
+      }
+    </script>
+  </head>
+  <body>
+      <!-- Título Principal -->
+      <header id="titulo">
+        <h1>Flex Model cont.</h1>
+      </header>
+
+      <!-- Menú -->
+       <!-- Menú de Navegación -->
+      <nav>
+        <ul>
+          <li><a href="./../index.html">Inicio</a></li>
+          <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Temas</a>
+            <div class="dropdown-content">
+              <a href="#home" target="_blank" rel="noopener noreferrer">
+                Flex
+              </a>
+              <a href="./flex2.html" target="_blank" rel="noopener noreferrer">
+                Flex cont.
+              </a>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">w3schools</a>
+            <div class="dropdown-content">
+              <a href="https://www.w3schools.com/html/"
+                target="_blank" rel="noopener noreferrer">HTML</a>
+                <a href="https://www.w3schools.com/css/default.asp"
+                target="_blank" rel="noopener noreferrer">CSS</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <!-- Sección 1 -->
+      <section id="secciones">
+      <section class="seccion-subtitulo">
+        <p>Justify Content</p>
+      </section>
+      
+      <section class="subtituloLargo">
+        <div id="main">
+          <div style="background-color:coral;">1</div>
+          <div style="background-color:lightblue;">2</div>
+          <div style="background-color:pink;">3</div>
+        </div>
+      </section>
+
+      <section class="botonera">
+        <button onclick="changeToStart()">flex-start</button>
+        <button onclick="changeToEnd()">flex-end</button>
+        <button onclick="changeToSpaBet()">space-between</button>
+        <button onclick="changeToCenter()">center</button>
+        <button onclick="toDarkMode()">&#x1f312; Dark Mode</button>
+        <button onclick="toLightMode()">&#x1f31e; Grey Mode</button>
+      </section>
+
+      <section class="seccion-subtitulo">
+        <p>Align Items</p>
+      </section>
+        
+      <section id="seccion-direction">
+        <div id="main2">
+          <div style="background-color:coral;min-height:30px;">RED</div>
+          <div style="background-color:lightblue;min-height:50px;">BLUE</div>  
+          <div style="background-color:lightgreen;min-height:190px;">Green div with more content.</div>
+        </div>
+      </section>
+
+      <section class="botonera">
+        <button onclick="changeToAlStart()">flex-start</button>
+        <button onclick="changeToAlEnd()">flex-end</button>
+        <button onclick="changeToAlCenter()">center</button>
+        <button onclick="toDarkMode()">&#x1f312; Dark Mode</button>
+        <button onclick="toLightMode()">&#x1f31e; Grey Mode</button>
+      </section>
+
+      <section class="seccion-subtitulo">
+        <p>Align Content</p>
+      </section>
+
+      <section class="subtituloLargo">
+        <div id="flex-alContent">
+          <div style="background-color:coral;">1</div>
+          <div style="background-color:lightblue;">2</div>
+          <div style="background-color:pink;">3</div>
+        </div>
+      </section>
+
+      <section class="botonera">
+        <button onclick="changeToAlConStart()">flex-start</button>
+        <button onclick="changeToAlConEnd()">flex-end</button>
+        <button onclick="changeToAlConCenter()">center</button>
+        <button onclick="changeToAlConSpAround()">space-around</button>
+        <button onclick="changeToAlConSpBetween()">space-between</button>
+        <button onclick="toDarkMode()">&#x1f312; Dark Mode</button>
+        <button onclick="toLightMode()">&#x1f31e; Grey Mode</button>
+      </section>
+
+      <section class="subtituloLargo">
+        <p>Align Self</p>
+      </section>
+      
+      <section id="subtituloLargo">
+        <div id="flex-alSelf">
+          <div style="background-color:coral;">This DIV has little content.</div>
+          <div id="myBlueDiv" style="background-color:lightblue;">This DIV has more content and usually this can be a problem when aligning multiple DIV elements.</div>  
+          <div style="background-color:lightgreen;">This <br>DIV<br>has<br>many<br>line<br>breaks.</div>
+        </div>
+      </section>
+
+      <section class="botonera">
+        <button onclick="changeToAlSelfStart()">flex-start</button>
+        <button onclick="changeToAlSelfEnd()">flex-end</button>
+        <button onclick="changeToAlSelfCenter()">center</button>
+        <button onclick="changeToAlSelfStretch()">stretch</button>
+        <button onclick="toDarkMode()">&#x1f312; Dark Mode</button>
+        <button onclick="toLightMode()">&#x1f31e; Grey Mode</button>
+      </section>
+
+      <section class="subtituloLargo">
+        <p>Flex</p>
+      </section>
+      
+      <section id="flex-grow">
+        <div style="background-color:coral;"></div>
+        <div style="background-color:lightblue;"></div>
+        <div style="background-color:khaki;"></div>
+        <div style="background-color:pink;"></div>
+        <div style="background-color:lightgrey;"></div>
+      </section>
+
+      <section id="seccion-icono">
+        <h2>Sección Icono</h2>
+        <span class="mask-demo"></span>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore magni nihil asperiores, perspiciatis, consequatur explicabo architecto quo illo maxime cupiditate incidunt laboriosam pariatur dolores illum laudantium accusantium aspernatur, eligendi ipsum?
+        </p>
+      </section>
+      <!-- Pie de pagina -->
+      <section>
+        <footer>
+          <div>
+            <a href="#">Nicolás Elias Rivera</a>
+          </div>
+          <div id="divPersonalizado" class="divPersonalizado">
+            Responsive Site
+          </div>
+        </footer>
+      </section>
+      </section>
+  </body>
+</html>

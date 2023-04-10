@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Links</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cinzel">
+    <link rel="icon" type="image/png" href="./icons/favicon.png"/>
+</head>
+<body>
+  <div id="container">
+  <!-- Menú de Navegación -->
+  <div class="menu-bar">
+  <nav>
+    <ul>
+      <li><a href="#home">Inicio</a></li>
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">w3schools</a>
+        <div class="dropdown-content">
+          <a href="https://www.w3schools.com/html/"
+            target="_blank" rel="noopener noreferrer">HTML</a>
+            <a href="https://www.w3schools.com/css/default.asp"
+            target="_blank" rel="noopener noreferrer">CSS</a>
+        </div>
+      </li>
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Temas</a>
+        <div class="dropdown-content">
+          <a href="./pages/flex.html" target="_blank" rel="noopener noreferrer">
+            Flex
+          </a>
+          <a href="./pages/flex2.html" target="_blank" rel="noopener noreferrer">
+            Flex cont.
+          </a>
+        </div>
+      </li>
+    </ul>
+  </nav>
+</div>
+  <!-- Contenido -->
+  <section>
+    <h2 class="section-title">Ejemplo de section</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore magni nihil asperiores, perspiciatis, consequatur explicabo architecto quo illo maxime cupiditate incidunt laboriosam pariatur dolores illum laudantium accusantium aspernatur, eligendi ipsum?
+    </p>
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit praesentium sunt nisi debitis eum. Nemo saepe dolores fugit inventore blanditiis rem quam? Quidem, est quia voluptatibus maxime assumenda quasi architecto!
+    </p>
+  </section>
+  
+
+  <section id="seccion-noticias">
+    <article>
+      <h2>Sección Noticias</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat eligendi magnam, in sunt, neque et blanditiis facere quia, assumenda rerum voluptatum numquam. Porro illo nesciunt commodi fugiat omnis debitis quasi.
+      </p>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi minus tempore quo, culpa quibusdam laborum? Nulla, voluptas odio quisquam ab dolor, cupiditate asperiores eveniet labore quam, corporis illum doloribus aliquam.
+      </p>
+
+    </article>
+  </section>
+
+  <section id="seccion-img">
+    <h2>Sección Imágenes</h2>
+    <h3>Aprilia Racing Factory Team</h3>
+    <p>
+      Aprilia Racing Factory Team es el equipo oficial de fábrica de Aprilia que compite desde la temporada 2022 en el Campeonato del mundo de MotoGP™.
+    </p>
+    <figure>
+      <img src="img/aprilia.jpg" style="width: 100%; height: 100%;" alt="moto gp del equipo Aprilia">
+      <figcaption>Moto del equipo Aprilia</figcaption>
+    </figure>
+    <h3>LCR Honda Team</h3>
+    <p>
+      El LCR Team es un equipo de motociclismo fundado por el italiano Lucio Cecchinello en 1996. 
+    </p>
+    <details>
+      <summary>más info ..</summary>
+      <p>
+        Actualmente compite en el Campeonato del Mundo de MotoGP bajo los nombres de LCR Honda Castrol, con Álex Rins y LCR Honda Idemitsu, con Takaaki Nakagami. También compite en la Copa Mundial de Moto-E bajo el nombre de LCR E-Team con el brasileño Eric Granado y el español Miquel Pons.
+      </p>
+      <p>
+        Con más de 25 años de experiencia y una larga trayectoria, por LCR han pasado pilotos como Casey Stoner, Cal Crutchlow, Jack Miller, Carlos Checa, Randy De Puniet y Álex Márquez entre otros.
+      </p>
+      <figure>
+        <img src="img/hrc.jpg" style="width: 100%; height: 100%;" alt="moto gp del equipo LCR honda">
+        <figcaption>Moto del equipo LCR Honda</figcaption>
+      </figure>
+    </details>
+    <h3>Ducati VR46 Racing Team</h3>
+    <p>
+      VR46 Racing Team, anteriormente conocido bajo el nombre de SKY Racing Team VR46, es un equipo italiano que compite en las categorías de Moto2 y MotoGP del Campeonato del Mundo de Motociclismo. El dueño del equipo es Valentino Rossi y el director del equipo es el español Pablo Nieto.
+    </p>
+    <details>
+      <summary>más info ..</summary>
+    <p>
+      El equipo debutó en 2014 con los pilotos: Romano Fenati y Francesco Bagnaia. El equipo consiguió su primer triunfo en el Gran Premio de la República Argentina de 2014 y el título de pilotos de Moto2 en la temporada 2018 con Francesco Bagnaia.
+    </p>
+    <figure>
+      <img src="img/ducati.jpg" style="width: 100%; height: 100%;" alt="moto gp del equipo VR46 Racing Team">
+      <figcaption>Moto del equipo VR46 Racing Team</figcaption>
+    </figure>
+    </details>
+  </section>
+  <section id="seccion-form">
+    <div id="form-container">
+      <h2 class="titulo-form">Ingrese su comentario</h2>
+      <form>
+        <input type="text" id="nombre" class="input_text" placeholder="Ingrese su nombre..">
+        <input type="text" id="apellido" class="input_text" placeholder="Ingrese su apellido..">
+        <input type="email" id="mail" class="input_text" placeholder="E-Mail">
+        <textarea name="comentario" id="comentario" cols="30" rows="7">
+        </textarea>
+        <p></p>
+        <input type="submit" value="Enviar" class="buttons">
+        <input type="reset" value="Limpiar" class="buttons">
+      </form>
+    </div>
+  </section>
+
+  <!-- Pie de pagina -->
+  <footer>
+    <div>
+      <a href="#">Nicolás Elias Rivera</a>
+    </div>
+    <div id="divPersonalizado" class="divPersonalizado">
+      Responsive Site
+    </div>
+  </footer>
+  
+  </div>
+</body>
+
+</html>

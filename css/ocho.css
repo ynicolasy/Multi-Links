@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Sono:wght@400;449&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+body {
+  height:100vh;
+  font-family: 'Dancing Script', serif;
+}
+
+header {
+  color: salmon;
+  text-align: center;
+}
+
+#container {
+  font-family: 'Dancing Script', Arial, sans-serif;
+  border-style: solid;
+  border-color: red;
+  background-color: #025159;
+}
+
+section {
+  width: 95%;
+  background: #659AA6;
+  float: left;
+  overflow: auto;
+  border-style: solid;
+  border-color: yellow;
+  border-radius: 1%;
+  margin: 1%;
+  padding: 1%;
+}
+
+#seccion-noticias {
+  font-family: 'Sono', sans-serif;
+}
+
+#seccion-old {
+  font-family: 'Dancing Script', cursive;
+  font-size: x-large;
+}
+
+#seccion-img {
+  background-image: url('https://picsum.photos/200/300?random=1');
+}
+
+#seccion-icono {
+  background-color: #659AA6;
+}
+
+.mask-demo {
+  /* Add dimentions to span */
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  /* Add background color */
+  background-color: currentColor;
+  /* Add mask image, use variable to reduce duplication */
+  --svg: url('https://api.iconify.design/bi/bell-fill.svg');
+  -webkit-mask-image: var(--svg);
+  mask-image: var(--svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+}
+
+span.a {
+    display: inline; /* the default for span */
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    border: 1px solid blue;  
+    background-color: yellow; 
+  }
+  
+  span.b {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    border: 1px solid blue;    
+    background-color: yellow; 
+  }
+  
+  span.c {
+    display: block;
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    border: 1px solid blue;    
+    background-color: yellow; 
+  }
+
+#box-model {
+    width: 300px;
+    height: 80px;
+    border: 2px solid blueviolet;
+}
+
+#texto {
+    border: 2px dashed yellow;
+    padding: 1%;
+    margin: 2%;
+}
+
+#overflowTest {
+  background: #4CAF50;
+  color: black;
+  padding: 15px;
+  width: 50%;
+  height: 100px;
+  overflow: auto;
+  border: 1px solid #ccc;
+}
+
+.flex-container {
+  display: flex;
+}
+.flex-item {
+  border: 2px solid #025159;
+  padding: 1%;
+}

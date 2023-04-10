@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Sono:wght@400;449&display=swap');
+
+:root {
+  --primary: #1f3143;
+  --secondary: #013440;
+  --third: #025159;
+  --fourth: #659AA6;
+  --fifth: #B4D2D9;
+  --sixth: #F2E9E4;
+  --seventh:  #95a5a6 ;
+}
+
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+html {
+  height:100vh;
+  font-size: 1.8vw;
+  font-family: 'Sono', Arial, Helvetica, sans-serif;
+}
+
+body {
+  border-style: solid;
+  border-color: green;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1, h2, h4, h5, h6 {
+  text-align: center;
+}
+
+h3 {
+  text-align: left;
+  margin-top: 5%;
+}
+
+p {
+  color: var(--primary);
+  margin: 3% 1%;
+}
+
+#container {
+  border: 2px solid red;
+}
+
+header {
+  border: 2px solid var(--primary);
+  display: flex;
+  justify-content: center;
+  align-items: normal;
+  color: var(--primary);
+  background-color: #659AA6;
+  height: 20%;
+  margin: 2%;
+}
+
+.titlePadd {
+  padding: 2% 0;
+}
+
+nav {
+  border: 3px solid var(--fourth);
+  position: fixed;
+  width: 97vw;
+}
+
+.menu-bar {
+  border: 2px solid yellow;
+  padding-top: -2%;
+}
+section {
+  background: #659AA6;
+  float: left;
+  overflow: auto;
+  border: 3px solid var(--primary);
+  border-radius: 1.5rem;
+  margin: 1%;
+  padding: 1%;
+  font-size: 1.8vw;
+}
+
+.section-title {
+  margin: 3% 0;
+}
+
+aside {
+  float: right;
+  width: 15%;
+  visibility: hidden;
+  /*Si quisieramos ocultar el contenido relacionado pondriamos visibility a hidden*/
+  /*visibility: hidden;*/
+}
+
+footer {
+  position: relative;
+  height: 15%;
+  padding: 5px 0px;
+  clear: both;
+  background: #013440;
+  text-align: center;
+  color: #fff;
+  border: 2px solid var(--fourth);
+}
+
+.input_text {
+  border-radius: 5px;
+  width: 60%;
+  background-color: #B4D2D9;
+  margin: 1%;
+  font-size: 95%;
+  font-family: "Sono", Arial, Helvetica, sans-serif;
+}
+
+textarea {
+  border-radius: 5px;
+  width: 60%;
+  background-color: #B4D2D9;
+  margin: 1%;
+  font-size: 95%;
+  font-family: "Sono", Arial, Helvetica, sans-serif;
+}
+
+.buttons {
+  border-radius: 5px;
+  width: 15%;
+  background-color: #B4D2D9;
+  margin: 1%;
+  min-width: 10%;
+  font-family: "Sono", Arial, Helvetica, sans-serif;
+  font-size: 1.8vw;
+}
+
+figure {
+  display: table; margin: 0 auto;
+}
+
+div a {
+  color: #fff;
+}
+
+#divPersonalizado {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #B4D2D9;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #1f3143;
+}
+        
+li {
+  float: left;
+}
+  
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: #286af0;
+}
+  
+li.dropdown {
+  display: inline-block;
+}
+  
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+  
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+  
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+  
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+#seccion-noticias {
+  font-family: 'Cinzel', Arial, Helvetica, serif;
+}
+
+#seccion-img {
+  font-family: 'Cinzel', Arial, Helvetica, serif;
+}
+
+#div-imagen {
+  min-height: 50vh;
+  background-image: url('./../img/ducati.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: 1px solid red;
+}
+
+#seccion-form {
+  font-family: "Sono", Arial, Helvetica, serif;
+  border: 2px solid #013440;
+}
+
+form {
+  text-align: center;
+  font-family: "Sono", Arial, Helvetica, serif;
+}
+
+.titulo-form {
+  margin-bottom: 5%;
+}
+
+#form-container {
+  width: 65%;
+  border: 2px solid #1f3143;
+  border-radius: 25px;
+  margin: auto;
+  background-color: var(--fourth);
+  padding: 5% 0;
+}
+
+#comentario {
+  font-family: "Sono", Arial, Helvetica, serif;
+}
+
+details > summary {
+  padding: 0 1%;
+  width: 15%;
+  background-color: dodgerblue;
+  border: none;
+  box-shadow: 1px 1px 2px #bbbbbb;
+  cursor: pointer;
+  border-radius: 1rem;
+}
+  
+details > p {
+  background-color: #1f3143;
+  color: #659AA6;
+  padding: 2% 2%;
+  margin: 1% 0;
+  box-shadow: 1px 1px 2px #bbbbbb;
+  border-radius: 1rem;
+}

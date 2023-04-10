@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Sono:wght@400;449&display=swap');
+
+:root {
+  --primary: #1f3143;
+  --secondary: #013440;
+  --ter: #025159;
+  --cua: #659AA6;
+  --seven:  #95a5a6 ;
+  --fifth: #B4D2D9;
+  --six: #F2E9E4;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Sono', serif;
+}
+
+header {
+  color: var(--primary);
+  background-color: #659AA6;
+  text-align: center;
+  margin: 2%;
+}
+
+#container {
+  font-family: 'Sono', Arial, sans-serif;
+  border: solid 2px var(--primary);
+  background-color: #025159;
+}
+
+section {
+  width: 95%;
+  background: #659AA6;
+  float: left;
+  overflow: auto;
+  border-style: solid;
+  border-color: var(--primary);
+  border-radius: 1%;
+  margin: 1%;
+  padding: 1%;
+}
+
+#secciones {
+  border-radius: 0.5%;
+  width: 98%;
+}
+
+.seccion-subtitulo {
+  width: 40vw;
+  font-family: 'Sono', sans-serif;
+  border: solid 2px #1f3143;
+  margin: 2%;
+  border-radius: 0.5%;
+  color: var(--fifth);
+  background-color: #025159;
+}
+
+.subtituloLargo {
+  width: 90vw;
+  font-family: 'Sono', sans-serif;
+  border: solid 2px #1f3143;
+  margin: 2%;
+}
+
+.botonera {
+  width: 50vw;
+  font-family: 'Sono', sans-serif;
+  border: solid 2px #1f3143;
+  margin: 2%;
+}
+
+#seccion-direction {
+  height: 30%;
+}
+
+#seccion-old {
+  font-family: 'Dancing Script', cursive;
+  font-size: x-large;
+}
+
+#seccion-img {
+  background-image: url('https://picsum.photos/200/300?random=1');
+}
+
+#seccion-icono {
+  background-color: #659AA6;
+}
+
+.mask-demo {
+  /* Add dimentions to span */
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  /* Add background color */
+  background-color: currentColor;
+  /* Add mask image, use variable to reduce duplication */
+  --svg: url('https://api.iconify.design/bi/bell-fill.svg');
+  -webkit-mask-image: var(--svg);
+  mask-image: var(--svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+}
+
+#main {
+  width: 92vw;
+  height: auto;
+  border: solid 2px #1f3143;
+  display: flex;
+  flex-direction: column;
+}
+
+.rowMode {
+  display: flex;
+  flex-direction: row;
+}
+
+#main div {
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+#main2 {
+  width: 202px;
+  height: 200px;
+  border: 1px solid #c3c3c3;
+  display: flex;
+  flex-flow: row wrap-reverse;
+}
+
+#main2 div {
+  width: 50px;
+  height: 50px;
+}
+
+.flex-container {
+  display: flex;
+  align-items: stretch;
+  background-color: black;
+  gap: 15px;
+  height: 100px;
+}
+
+.flex-container div {
+  background-color: DodgerBlue;
+  color: white;
+  width: 100px;
+  height: 20px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+/* Standard syntax */
+div#myRedDIV   {order: 2;}
+div#myBlueDIV  {order: 4;}
+div#myGreenDIV {order: 3;}
+div#myPinkDIV  {order: 1;}
+
+/* Safari 6.1+ */
+div#myRedDIV   {-webkit-order: 2;}
+div#myBlueDIV  {-webkit-order: 4;}
+div#myGreenDIV {-webkit-order: 3;}
+div#myPinkDIV  {-webkit-order: 1;}
+
+
+/* Menu Style */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: var(--primary);
+}
+        
+li {
+  float: left;
+}
+  
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: #286af0;
+}
+  
+li.dropdown {
+  display: inline-block;
+}
+  
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+  
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+  
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+  
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+footer {
+  height: 15%;
+  padding: 5px 0px;
+  text-align: center;
+  color: #fff;
+}
