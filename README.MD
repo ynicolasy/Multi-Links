@@ -1,5 +1,4 @@
-Info
-Este sitio agrupa toda la información de interés.
+Este archivo agrupa toda la información de interés.
 
 Descripción del proyecto:
 
@@ -13,21 +12,19 @@ La página index.html tiene distintos bordes
 * #1f3143 para las secciones
 * #659AA6 para el menú
 
-<ul>
-<li>Verde para el elemento < body ></li>
-<li>Verde para el elemento < body ></li>
-</ul>
-
 * Fuentes
 Sono, etc.
+<div style="color= #659AA6;">
+hola
+</div>
 
 Paleta de Colores
-* Color 1 #013440
-* Color 2 #659AA6
-* Color 3 #B4D2D9
-* Color 4 #025159
-* Color 5 #F2E9E4
-* Color 6 #1f3143     
+* 1 #013440
+* 2 #659AA6
+* 3 #B4D2D9
+* 4 #025159
+* 5 #F2E9E4
+* 6 #1f3143     
 
 
 
